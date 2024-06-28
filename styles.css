@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@400;600&family=Kalam:wght@700&family=Kanit&family=Kaushan+Script&family=Merriweather&family=Montserrat:wght@400;500&family=Poor+Story&family=Poppins:wght@400;700&family=Roboto&family=Sacramento&family=Sigmar&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+.banner {
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: all 0.5s ease;
+
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.logo span {
+    color: orange;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.content span{
+    color: orange;
+   
+
+
+}
+
+.content{
+    position: relative;
+    max-width: 700px;
+    
+}
+
+.content h2{
+    font-size: 5rem;
+    color: #333;
+    transition: all 0.5s ease;  
+}
+
+
+.content p{
+    font-size: 1.2rem;
+    color: #666;
+    margin-block: 10px;
+    transition: all 0.5s ease; 
+
+}
+
+.content button{
+    position: relative;
+    background: orange;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    outline: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    margin-top: 0.7rem;
+    font-weight: 600;
+}
+
+.content button.chat{
+    background: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.dayNight{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    font-size: 2rem;
+}
+.dayNight ion-icon:nth-child(2),  .banner.night .dayNight ion-icon:nth-child(1){
+
+    display: none;
+
+}
+
+.banner.night .dayNight ion-icon:nth-child(2){
+    display: block;
+
+}
+
+
+.banner.night{
+    background: #333;
+  
+}
+
+.banner.night .dayNight{
+    background: #444;
+    color: #fff;
+}
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night header ul li a {
+    color: #fff;
+}
+
+.banner.night .content button.chat{
+    border: 2px solid #fff;
+}
